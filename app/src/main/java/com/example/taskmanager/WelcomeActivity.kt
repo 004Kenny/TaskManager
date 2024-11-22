@@ -29,6 +29,9 @@ class WelcomeActivity : AppCompatActivity() {
             val startFPIntent = Intent(this, ForgotPassword::class.java)
             startActivity(startFPIntent)
         }
+        signInButton.setOnClickListener {
+            startActivity(Intent(this, MainActivity2::class.java))
+        }
 
 
 
